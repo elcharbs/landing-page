@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: black;
     display: flex;
     color: white;
     font-family: 'Courier Prime', monospace;
     justify-content: space-between;
-    align-items: space-between;
+    align-items: stretch;
     flex-direction: column;
-    padding: 0 var(--gap);
-    max-width: var(--maxWidth);
+    padding: 0 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -20,11 +25,9 @@ ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    align-content: flex-end;
     gap: 30px;
     flex: 1;
-    text-wrap: nowrap;
-    margin-inline-start: 0px;
+    padding: 0;
 }
 
 a {
