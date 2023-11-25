@@ -41,9 +41,24 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-.header, .footer {
+.header, .footer, .section-one {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 4vw 10px 4vw;
+}
+
+.text-block, .section-one-image {
+    flex: 1;
+}
+
+img {
+    object-fit: scale-down;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.section-one {
+    padding: 10vh 4vw 10vh 4vw;
 }
