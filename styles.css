@@ -19,6 +19,8 @@ body {
 
 .logo {
     flex: 1;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 ul {
