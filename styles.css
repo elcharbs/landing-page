@@ -41,16 +41,9 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-.header {
+.header, .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 4vw 10px 4vw;
-}
-
-.footer {
-    display: flex;
-    align-content: center;
     justify-content: center;
-    flex: 1;
+    padding: 10px 4vw 10px 4vw;
 }
