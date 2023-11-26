@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 20px;
+}
+ 
 img {
     object-fit: cover;
     width: 100%;
@@ -45,14 +49,20 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-.header-container, .section-two-container {
+.header-container, 
+.section-two-container {
     background-color: rgb(67, 74, 74);
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.header, .footer, .section-one, .section-two, .key-points {
+.header, 
+.footer, 
+.section-one, 
+.section-two, 
+.section-three,
+.key-points {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +74,7 @@ a:hover {
 
 .header {
     background-color: rgb(67, 74, 74);
+    font-size: 20px;
 }
 
 .logo {
@@ -72,12 +83,15 @@ a:hover {
     font-weight: 900;
 }
 
-.section-one, .section-two {
+.section-one, 
+.section-two,
+.section-three {
     gap: 40px;
-    padding: 5% 5%;
+    padding: 2% 5%;
 }
 
-.text-block, .section-one-image {
+.text-block, 
+.section-one-image {
     flex: 1;
 }
 
@@ -100,10 +114,13 @@ button {
     border-color: greenyellow;
 }
 
-.point {
+.point, 
+.section-three{
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    gap: 0px;
 }
 
 .key-points {
@@ -112,6 +129,7 @@ button {
     text-align: center;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .point-pic {
@@ -119,4 +137,11 @@ button {
     height: auto;
     border-radius: 20px;
     border: 4px solid white;
+}
+
+.attribution {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
