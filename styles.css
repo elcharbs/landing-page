@@ -95,7 +95,12 @@ a:hover {
     font-weight: 900;
 }
 
-.section-one, 
+.section-one {
+    gap: 40px;
+    padding: 3.5% 5%;
+    padding-top: 90px;
+}
+
 .section-two,
 .section-three,
 .section-four {
