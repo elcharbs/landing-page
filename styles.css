@@ -177,24 +177,31 @@ button {
     color: black;
     padding: 20px 80px;
     display: flex;
-    justify-content: space-between;
-    gap: 90px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
     border-radius: 10px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .cta-bold {
     font-size: 32px;
     font-weight: 900;
     padding: 0 0 20px 0;
+    max-width: 400px;
 }
 
 .cta-small {
     font-size: 20px;
+    max-width: 400px;
 }
 
 .right-side {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .black-button {
