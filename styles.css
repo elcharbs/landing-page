@@ -2,6 +2,11 @@
 
 html {
     height: 100%;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -10,17 +15,16 @@ body {
     color: white;
     font-family: 'Courier Prime', monospace;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     flex-direction: column;
-    padding: 0 2rem;
-    max-width: 1500px;
-    margin: 0 auto;
+    margin: 0;
 }
 
-.logo {
-    flex: 1;
-    font-size: 20px;
-    font-weight: 900;
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 ul {
@@ -41,30 +45,40 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-.header, .footer, .section-one {
+.header-container, .section-two-container {
+    background-color: rgb(67, 74, 74);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header, .footer, .section-one, .section-two, .key-points {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 4vw;
     flex-wrap: wrap;
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 5%;
 }
 
-.section-one {
-    gap: 40px;
+.header {
+    background-color: rgb(67, 74, 74);
 }
+
+.logo {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.section-one, .section-two {
+    gap: 40px;
+    padding: 5% 5%;
+}
+
 .text-block, .section-one-image {
     flex: 1;
-}
-
-img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-
-.section-one {
-    padding: 8vh 4vw;
 }
 
 button {
@@ -82,6 +96,27 @@ button {
 .button1:hover {
     background-color: black;
     font-weight: 900;
-    color: greenyellow;
+    color: #adff2f;
     border-color: greenyellow;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.key-points {
+    flex-wrap: nowrap;
+    gap: 30px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.point-pic {
+    max-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid white;
 }
