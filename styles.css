@@ -35,7 +35,7 @@ ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    gap: 5vw;
+    gap: 50px;
     flex: 1;
     padding: 0;
 }
@@ -70,6 +70,18 @@ a:hover {
     max-width: 1500px;
     width: 100%;
     padding: 0 5%;
+}
+
+.header-container {
+    background-color: rgb(67, 74, 74);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed; /* Added to fix the container at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* High z-index to ensure it stays on top */
 }
 
 .header {
